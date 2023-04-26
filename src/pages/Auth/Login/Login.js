@@ -9,6 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from 'context/AuthContext'
 import Loader from 'components/loading/Loader'
+import logo from 'assets/images/logo_login.png'
 const cx = classNames.bind(styles)
 
 const Login = () => {
@@ -84,7 +85,7 @@ const Login = () => {
             <div className={cx('form')}>
               <div className={cx('header')}>
                 <div className={cx('text-header')}>
-                  Liam
+                  <img src={logo} alt='' width={200}/>
                 </div>
                 <div className={cx('underline-header')}></div>
               </div>

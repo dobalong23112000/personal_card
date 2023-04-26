@@ -4,6 +4,7 @@ import background2 from 'assets/images/background2.jpg'
 import background3 from 'assets/images/background3.jpg'
 import background4 from 'assets/images/background4.jpg'
 import background5 from 'assets/images/background5.jpg'
+import background6 from 'assets/images/background6.jpg'
 export const templates = [
 
     {
@@ -35,5 +36,11 @@ export const templates = [
         url: '/background5.jpg',
         src: background5,
         color: '#1f2424'
+    },
+    {
+        id:6,
+        url: '/background6.jpg',
+        src: background6,
+        color: 'black'
     }
 ]

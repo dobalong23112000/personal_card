@@ -5,6 +5,7 @@ import classNames from 'classnames/bind'
 // import { useNavigate } from 'react-router-dom';
 import { Button } from 'antd';
 import { AuthContext } from 'context/AuthContext';
+import logo from 'assets/images/logo.png'
 const cx = classNames.bind(styles)
 
 const Header = () => {
@@ -13,7 +14,9 @@ const Header = () => {
 
   return (
     <div className={cx('container')}>
-      <div> <span style={{ fontSize: "40px", marginLeft: "15px", fontFamily: 'Dancing Script', color:"white" }}>Liam</span></div>
+      <div className='d-flex align-items-center ml-5'> 
+        <img src={logo} alt='' width={150} height={40}></img>
+      </div>
       <div className='mr-5'>
         <Button type="primary" danger onClick={async (e)=>{
           await logoutUser()
