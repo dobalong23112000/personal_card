@@ -1,0 +1,21 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+    background-color: #6C757D;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active-item {
+    font-weight: 600;
+    color: #1677ff;
+}
+
+.sub-avatar {
+    font-weight: bold;
+}

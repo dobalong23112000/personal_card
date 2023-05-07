@@ -1,0 +1,102 @@
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+
+/* General */
+$fontSize: 14px;
+// $borderRadius: 12px;
+// $transitionDuration: 0.2s;
+// $maskBg: rgba(0, 0, 0, 0.4);
+
+$linkColor: #2196f3;
+$focusBorderColor: #BBDEFB;
+
+// $widthConfig: 32px;
+// $fSizeBtnConfig: 18px;
+
+//pdf
+$borderPdf: #B2B2B2;
+$bgPanelPdf: #EEEEEE;
+$bgPdf: #fff;
+$colorTextPdf: #000;
+
+$width: 0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+    31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+    41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+    51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+    61, 62, 63, 64, 65, 66, 67, 68, 69, 70,
+    71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+    81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
+    91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
+    175, 350, 150, 170,
+    200, 300, 400, 500, 600, 700, 800, 900, 1000;
+
+$fontWeight: 100, 200, 300, 400, 500, 600, 700, 800, 900, bold, bolder, lighter, normal, inherit, initial, unset;
+
+$display: none, inline, inline-block, block, flex, inline-flex, hidden, visible, revert;
+
+$align: left, center, right, justify;
+
+$overFlow: auto, clip, hidden, inherit, initial, overlay, revert, scroll, unset, visible;
+
+$vertical: auto, baseline, bottom, middle, sub, super, text-bottom, text-top, top, -webkit-baseline-middle;
+
+:root {
+    --blue: #1677ff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #1677ff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --black: #000;
+    --color-background-gray: #efefef;
+    --link-color: #212529;
+    // d5e5fa
+    --surface-b: #f9fbfd;
+    --surface-a: #79d9ff;
+    --surface-ab: #d6f3ff;
+    --background-app: #ffffff;
+    --surface-atbody: #b6e5f8;
+    --surface-ad: #94e0fd;
+    --surface-button: #3bc5fc;
+    --surface-button-bold: #10a9e6;
+    --surface-text-ad: #017fb1;
+    --height-header-footer: 4rem;
+    --height-footer: 4rem;
+    --min-height-content: 88.5vh;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1440px;
+
+    --thead: var(--surface-a);
+    --tbody: var(--surface-atbody);
+    --border-radius: 4px;
+
+    --primary-gjs:#373d49;
+    --border-gjs:#444;
+    --color-border:#ced4da;
+}
