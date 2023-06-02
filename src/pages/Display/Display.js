@@ -548,7 +548,7 @@ const Display = () => {
                     </div>
                 </div>
             </div>
-            <div className='d-flex justify-center' style={{ width: "100%", marginTop: "60px", height: "40px", color: "white", textAlign: "center", fontSize: "11px", backgroundColor: "#495158" }}>
+            <div className='d-flex justify-center' style={{ width: "100vw", marginTop: "60px", height: "40px", color: "white", textAlign: "center", fontSize: "11px", backgroundColor: "#495158" }}>
                 <div style={{ width: "90%", textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap', lineHeight: "40px", textAlign: "center" }}>
                     Link truy cập của bạn là:
                     <a href={`http://liamtap.site/profile/${nickName}`} alt='' target="_blank" rel="noopener noreferrer" className={cx('link')}>{' '}http://liamtap.site/profile/{nickName}</a>
