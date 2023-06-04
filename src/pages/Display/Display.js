@@ -39,8 +39,9 @@ import VIBBANKIMG from "@assets/images/VIBBANK.png"
 
 
 
-import { listIcon } from 'utils/listIcon';
-import * as AntdIcons from '@ant-design/icons';
+import {  listIconFa } from 'utils/listIcon';
+
+import * as Icons from "react-icons/fa";
 import Loader from 'components/loading/Loader';
 import UserServices from 'services/user-service/UserService';
 import { AuthContext } from 'context/AuthContext';
@@ -49,7 +50,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import AvatarEditor from 'react-avatar-editor';
 import CardTemplate from 'components/card/CardTemplate';
 import { templates } from 'utils/template';
-
 const cx = classNames.bind(styles)
 const Display = () => {
     const { authState, loadUser } = useContext(AuthContext);
@@ -627,7 +627,7 @@ const Display = () => {
                                         {(provided, snapshot) => {
                                             let IconComponent = null;
                                             if (item?.icon) {
-                                                IconComponent = AntdIcons[item.icon];
+                                                IconComponent = Icons[item.icon];
                                             }
                                             return (
                                                 <div
@@ -850,8 +850,8 @@ const Display = () => {
                             name="block_icon"
                         >
                             <div className={cx("list-icon")}>
-                                {listIcon.map((item, index) => {
-                                    let IconComponent = AntdIcons[item];
+                                {listIconFa.map((item, index) => {
+                                    let IconComponent = Icons[item];
                                     return (
                                         <div key={uuid()} className={`${cx("item-icon")} ${item === activeIcon ? cx("active-icon") : ""}`} onClick={(e) => {
                                             setActiveIcon(item)

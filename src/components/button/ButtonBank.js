@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from '@pages/Bio/styleNewBio.module.scss'
 import classNames from 'classnames/bind'
 import { Button, Modal } from 'antd';
-import * as AntdIcons from '@ant-design/icons';
+import * as Icons from "react-icons/fa";
 // ngân hàng
 import VIETCOMBANKIMG from "@assets/images/VIETCOMBANK.png"
 import VIETTINBANKIMG from "@assets/images/VIETTINBANK.png"
@@ -29,7 +29,7 @@ const cx = classNames.bind(styles)
 const ButtonBank = ({ link, name, icon, bank_number, bank_type }) => {
     let IconComponent = null;
     if (icon) {
-        IconComponent = AntdIcons[icon];
+        IconComponent = Icons[icon];
     }
     const [isShow, setIsShow] = useState(false)
     return (

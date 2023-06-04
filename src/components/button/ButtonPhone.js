@@ -3,7 +3,7 @@ import styles from '@pages/Bio/styleNewBio.module.scss'
 import classNames from 'classnames/bind'
 import { Button } from 'antd';
 
-import * as AntdIcons from '@ant-design/icons';
+import * as Icons from "react-icons/fa";
 
 
 const cx = classNames.bind(styles)
@@ -12,7 +12,7 @@ const cx = classNames.bind(styles)
 const ButtonPhone = ({ link, name, icon }) => {
     let IconComponent = null;
     if (icon) {
-        IconComponent = AntdIcons[icon];
+        IconComponent = Icons[icon];
     }
     return (
         <div className={cx('button')}>

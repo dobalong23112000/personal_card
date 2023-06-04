@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '@pages/Bio/styleNewBio.module.scss'
 import classNames from 'classnames/bind'
 import { Button } from 'antd';
-import * as AntdIcons from '@ant-design/icons';
+import * as Icons from "react-icons/fa";
 
 const cx = classNames.bind(styles)
 
@@ -10,7 +10,7 @@ const cx = classNames.bind(styles)
 const ButtonSaveContact = ({ name, icon, orgInfo, personInfo }) => {
     let IconComponent = null;
     if (icon) {
-        IconComponent = AntdIcons[icon];
+        IconComponent = Icons[icon];
     }
     const downloadTxtFile = vcfText => {
         const element = document.createElement("a");
