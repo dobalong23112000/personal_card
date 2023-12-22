@@ -13,9 +13,11 @@ import ButtonBank from 'components/button/ButtonBank'
 import {
     CloseOutlined,
 } from '@ant-design/icons';
+import ButtonWalletDigital from 'components/button/ButtonWalletDigital'
+import ButtonCrypto from 'components/button/ButtonCrypto'
 const cx = classNames.bind(styles)
 const ViewDisplay = (props) => {
-    const { avatar, nickName, description, content, isModalOpen, handleShowModal,template } = props
+    const { avatar, nickName,userName, description, content, isModalOpen, handleShowModal,template } = props
     return (
         <Modal title=""
             open={isModalOpen}
@@ -33,12 +35,13 @@ const ViewDisplay = (props) => {
                                 width: "150px",
                                  height: "150px", 
                                  borderRadius: "50%",
-                                  border: "10px solid white", 
+                                  border: "5px solid white", 
                                   objectFit: "cover" 
                                   }}></img>
                         </div>
                     </div>
                     <div className={cx('name')}><b>{nickName}</b></div>
+                    <div className={cx('username')}>{userName}</div>
                     <div className={cx('description')}>{description}</div>
                 </div>
                 <div className={cx('content')}>
@@ -56,6 +59,10 @@ const ViewDisplay = (props) => {
                             return <ButtonSendSMS key={index} name={item.name} icon={item.icon} phone={item.phone} content={item.content} />
                         } else if (item?.typeBlock === 'bank') {
                             return <ButtonBank key={index} name={item.name} icon={item.icon} bank_type={item.bankType} bank_number={item.bankNumber} />
+                        } else if (item?.typeBlock === 'wallet_digital') {
+                            return <ButtonWalletDigital key={index} name={item.name} wallet_digital_type={item.wallet_digital_type} wallet_digital_link={item.wallet_digital_link} />
+                        } else if (item?.typeBlock === 'crypto') {
+                            return <ButtonCrypto key={index} name={item.name} icon={item.icon} crypto_type={item.crypto_type} crypto_address={item.crypto_address}  />
                         }
                         return false
                         // eslint-disable-next-line

@@ -12,3 +12,17 @@
     cursor: wait;
     position: fixed;
 }
+
+.Loader_Component {
+    z-index: 1002;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    cursor: wait;
+    position: fixed;
+}

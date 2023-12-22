@@ -10,7 +10,6 @@ const Home = () => {
   const checkUser = async () => {
     try {
       const response = await AuthServices.checkUser({ uuid: uuid })
-      console.log(response.data)
       if (response.data.status === 200) {
         if (response.data.data.email) {
           navigate(`/profile/${response.data.data.nickName}`)

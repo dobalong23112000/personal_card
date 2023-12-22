@@ -117,10 +117,20 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
-    font-size: 27px;
+    font-size: 13px;
     color: white;
   }
-
+  .username {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 27px;
+    color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden !important;
+    font-family: "Merriweather", serif;
+  }
   .description {
     text-align: center;
     font-size: 17px;

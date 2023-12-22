@@ -24,4 +24,14 @@ export const listIconFa = [
   "FaLine",
   "FaLinkedin",
   "FaTelegram",
+  "FaTumblr",
+  "FaSteam",
+  "FaSkype",
+  "FaReddit",
+  "FaItunesNote",
+  "FaSpotify",
+  "FaSoundcloud",
+  "FaSnapchat",
+  "FaShoppingCart",
+  "FaItunes"
 ];
